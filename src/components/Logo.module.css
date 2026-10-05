@@ -1,0 +1,62 @@
+.logoContainer {
+  font-family: var(--font-manrope), sans-serif;
+  font-size: 21px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  display: inline-flex;
+  align-items: baseline;
+  color: var(--brand-primary);
+  white-space: nowrap;
+}
+
+.textPart {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 200px;
+  opacity: 1;
+  transition: max-width 0.5s var(--ease-standard), opacity 0.4s var(--ease-standard);
+  white-space: nowrap;
+  vertical-align: bottom;
+}
+
+.compact .textPart {
+  max-width: 0;
+  opacity: 0;
+}
+
+.dotsWrapper {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.dots {
+  display: inline-block;
+  letter-spacing: 0.03em;
+  clip-path: inset(0 100% 0 0);
+  animation: revealDots 1.2s steps(4, end) forwards;
+  animation-delay: 0.4s;
+  line-height: 1;
+}
+
+@keyframes revealDots {
+  0% { clip-path: inset(0 100% 0 0); }
+  100% { clip-path: inset(0 0 0 0); }
+}
+
+.questionMark {
+  color: var(--accent);
+  display: inline-block;
+  opacity: 0;
+  transform: scale(0.8) translateY(2px);
+  animation: popQuestion 0.4s var(--ease-standard) forwards;
+  animation-delay: 1.6s;
+  line-height: 1;
+  font-weight: 800;
+}
+
+@keyframes popQuestion {
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}

@@ -1,0 +1,246 @@
+.page {
+  padding-top: 76px;
+  background-color: var(--bg-primary);
+}
+
+@media (max-width: 767px) {
+  .page {
+    padding-top: 64px;
+  }
+}
+
+.editorialTag {
+  display: inline-block;
+  font-family: var(--font-manrope);
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: var(--space-3);
+}
+
+.tagScenario { background: var(--bg-subtle); color: var(--text-secondary); }
+.tagMechanism { background: var(--brand-soft); color: var(--brand-primary); }
+.tagProposal { background: var(--success-soft); color: var(--success); }
+.tagUncertainty { background: var(--warning-soft); color: var(--warning); }
+.tagAttention { background: #FDE8E8; color: #C81E1E; }
+.tagFact { background: var(--success-soft); color: var(--success); }
+.tagSource { border: 1px solid var(--brand-primary); color: var(--brand-primary); }
+.tagContext { background: var(--bg-subtle); color: var(--text-secondary); }
+
+/* Hero */
+.narrativeHero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-9) 0;
+}
+
+.eyebrow {
+  font-family: var(--font-manrope);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  margin-bottom: var(--space-4);
+}
+
+.narrativeTitle {
+  font-size: clamp(40px, 6vw, 64px);
+  line-height: 1.05;
+  color: var(--brand-primary);
+  font-family: var(--font-manrope);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-5);
+  max-width: 1000px;
+}
+
+.narrativeSubtitle {
+  font-size: clamp(20px, 3vw, 24px);
+  color: var(--text-secondary);
+  max-width: 720px;
+  line-height: 1.5;
+  margin-bottom: var(--space-7);
+}
+
+/* Sections */
+.scenarioSection {
+  padding: var(--space-12) 0;
+  border-top: 1px solid var(--border-soft);
+  position: relative;
+}
+
+.hugeStatement {
+  font-size: clamp(32px, 5vw, 56px);
+  line-height: 1.1;
+  color: var(--brand-primary);
+  font-family: var(--font-manrope);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-3);
+}
+
+.hugeSubtitle {
+  font-size: clamp(24px, 4vw, 40px);
+  color: var(--text-secondary);
+  line-height: 1.2;
+  font-family: var(--font-manrope);
+  font-weight: 600;
+}
+
+/* Flow Diagrams */
+.flowDiagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  margin: var(--space-8) 0;
+  flex-wrap: wrap;
+}
+
+.flowDiagram.vertical {
+  flex-direction: column;
+  align-items: center;
+}
+
+.flowDiagram.vertical .flowArrow {
+  transform: rotate(90deg);
+  margin: var(--space-2) 0;
+}
+
+.flowNode {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  padding: var(--space-4) var(--space-5);
+  border-radius: 12px;
+  font-family: var(--font-manrope);
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--brand-primary);
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+
+.flowArrow {
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flowBarrier {
+  background: #FDE8E8;
+  border: 2px dashed #C81E1E;
+  color: #C81E1E;
+}
+
+.proposalReveal {
+  background: var(--brand-soft);
+  padding: var(--space-7);
+  border-radius: 24px;
+  margin-top: var(--space-8);
+}
+
+/* Split Compare */
+.splitCompare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+}
+
+.splitCard {
+  background: var(--bg-secondary);
+  padding: var(--space-6);
+  border-radius: 20px;
+  border: 1px solid var(--border-soft);
+}
+
+/* Perspectivas */
+.perspectivesSection {
+  background: #FFFFFF;
+  padding: var(--space-12) 0;
+}
+.perspectivesGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-7);
+  margin-top: var(--space-8);
+}
+.perspectiveTabs {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+.perspectiveTab {
+  padding: var(--space-4);
+  text-align: left;
+  border-radius: 12px;
+  font-family: var(--font-manrope);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--text-secondary);
+  transition: all 0.2s;
+  background: transparent;
+  border: 2px solid transparent;
+}
+.perspectiveTab[aria-selected="true"] {
+  background: var(--bg-subtle);
+  color: var(--brand-primary);
+  border-color: var(--border);
+}
+.perspectiveContent {
+  padding: var(--space-6);
+  background: var(--bg-primary);
+  border-radius: 24px;
+  border: 1px solid var(--border-soft);
+  min-height: 300px;
+}
+.perspectiveQuestion {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: var(--space-4);
+  padding-left: var(--space-4);
+  border-left: 4px solid var(--accent);
+  color: var(--brand-primary);
+  line-height: 1.4;
+}
+
+/* Others */
+.knowledgeGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+}
+.knowledgeCard {
+  background: var(--bg-secondary);
+  padding: var(--space-6);
+  border-radius: 20px;
+  border: 1px solid var(--border-soft);
+}
+
+@media (max-width: 767px) {
+  .flowDiagram:not(.vertical) {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .flowDiagram:not(.vertical) .flowArrow {
+    transform: rotate(90deg);
+    margin: var(--space-2) 0;
+  }
+  .splitCompare { grid-template-columns: 1fr; }
+  .perspectivesGrid { grid-template-columns: 1fr; }
+  .perspectiveTabs {
+    flex-direction: row;
+    overflow-x: auto;
+    padding-bottom: var(--space-3);
+  }
+  .perspectiveTab { white-space: nowrap; }
+  .knowledgeGrid { grid-template-columns: 1fr; }
+}
