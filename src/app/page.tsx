@@ -62,8 +62,26 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Onde Você Está Highlight */}
+        <section className={styles.themesSection} style={{ paddingBottom: 'var(--space-4)' }}>
+          <div className="container">
+            <Link href="/onde-voce-esta" className="card" style={{ display: 'block', padding: 'var(--space-8)', background: 'var(--brand-primary)', color: 'white', border: 'none' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '16px' }}>
+                <span className="badge badge-proposal" style={{ background: 'rgba(255,255,255,0.15)', color: 'white', borderColor: 'rgba(255,255,255,0.3)' }}>MAPA INTERATIVO</span>
+              </div>
+              <h3 className="h2" style={{ marginBottom: '12px', color: 'white' }}>Onde você está nessa história?</h3>
+              <p className="text-lead" style={{ color: 'rgba(255,255,255,0.8)', maxWidth: '800px', marginBottom: '24px' }}>
+                Consciência de classe não é rótulo, é um mapa. Entenda como renda, patrimônio, trabalho e dívidas explicam por que uma mesma promessa eleitoral afeta as pessoas de formas diferentes.
+              </p>
+              <div className="text-body" style={{ color: 'var(--accent)', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                Mapear minha posição na economia <ArrowRight size={20} />
+              </div>
+            </Link>
+          </div>
+        </section>
+
         {/* Themes Section */}
-        <section id="temas" className={styles.themesSection}>
+        <section id="temas" className={styles.themesSection} style={{ paddingTop: 'var(--space-6)' }}>
           <div className="container">
             <div className={styles.themesHeader}>
               <h2 className="h2">Comece pelo que faz parte da sua vida.</h2>

@@ -1,0 +1,77 @@
+.container {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-soft);
+  border-radius: 16px;
+  padding: var(--space-6);
+  margin: var(--space-8) 0;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: var(--space-4);
+}
+
+.icon {
+  color: var(--accent);
+}
+
+.title {
+  font-family: var(--font-manrope);
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--brand-primary);
+}
+
+.intro {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: var(--space-6);
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.checkItem {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: var(--bg-secondary);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.number {
+  background: var(--brand-primary);
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.content strong {
+  display: block;
+  font-family: var(--font-manrope);
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.content p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  margin: 0;
+}
