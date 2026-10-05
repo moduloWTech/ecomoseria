@@ -1,0 +1,214 @@
+.page {
+  padding-top: 76px;
+  background-color: var(--bg-primary);
+}
+
+@media (max-width: 767px) {
+  .page {
+    padding-top: 64px;
+  }
+}
+
+.editorialTag {
+  display: inline-block;
+  font-family: var(--font-manrope);
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin-bottom: var(--space-3);
+}
+
+.tagFact { background: var(--success-soft); color: var(--success); }
+.tagContext { background: var(--bg-subtle); color: var(--text-secondary); }
+.tagSource { border: 1px solid var(--brand-primary); color: var(--brand-primary); }
+
+/* Hero */
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-9) 0;
+}
+
+.eyebrow {
+  font-family: var(--font-manrope);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  margin-bottom: var(--space-4);
+}
+
+.heroTitle {
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 1.05;
+  color: var(--brand-primary);
+  font-family: var(--font-manrope);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-5);
+  max-width: 1000px;
+}
+
+.heroSubtitle {
+  font-size: clamp(20px, 3vw, 24px);
+  color: var(--text-secondary);
+  max-width: 720px;
+  line-height: 1.5;
+  margin-bottom: var(--space-7);
+}
+
+.heroCtas {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+/* Base Sections */
+.section {
+  padding: var(--space-12) 0;
+  border-top: 1px solid var(--border-soft);
+  position: relative;
+}
+.sectionDark {
+  background-color: var(--brand-primary);
+  color: white;
+}
+.sectionGray {
+  background-color: var(--bg-secondary);
+}
+
+.hugeStatement {
+  font-size: clamp(32px, 5vw, 56px);
+  line-height: 1.1;
+  color: inherit;
+  font-family: var(--font-manrope);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-3);
+}
+.hugeSubtitle {
+  font-size: clamp(24px, 4vw, 40px);
+  color: var(--text-secondary);
+  line-height: 1.2;
+  font-family: var(--font-manrope);
+  font-weight: 600;
+}
+.sectionDark .hugeSubtitle,
+.sectionDark .text-secondary {
+  color: rgba(255,255,255,0.7);
+}
+
+/* Metric Cards */
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6);
+  margin-top: var(--space-8);
+}
+.metricCard {
+  background: white;
+  border: 1px solid var(--border);
+  padding: var(--space-6);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+.metricValue {
+  font-family: var(--font-manrope);
+  font-weight: 800;
+  font-size: 32px;
+  color: var(--brand-primary);
+  margin: 12px 0;
+}
+
+/* Splits */
+.splitGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  margin-top: var(--space-8);
+}
+.splitCard {
+  background: var(--bg-secondary);
+  padding: var(--space-6);
+  border-radius: 20px;
+}
+
+/* System Nodes */
+.systemGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.systemNode {
+  background: white;
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  padding: var(--space-5);
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+}
+.systemIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: var(--brand-soft);
+  color: var(--brand-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.systemInfo h3 {
+  font-family: var(--font-manrope);
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--brand-primary);
+  margin-bottom: 4px;
+}
+.systemInfo p {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* Topics End */
+.topicsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+}
+.topicCard {
+  background: var(--bg-secondary);
+  padding: var(--space-5);
+  border-radius: 12px;
+  text-align: center;
+  font-family: var(--font-manrope);
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--brand-primary);
+  text-decoration: none;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+.topicCard:hover {
+  background: white;
+  border-color: var(--brand-primary);
+}
+
+@media (max-width: 767px) {
+  .heroCtas { flex-direction: column; }
+  .splitGrid { grid-template-columns: 1fr; }
+  .systemNode { flex-direction: column; text-align: center; }
+}

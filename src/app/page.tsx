@@ -87,6 +87,22 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Além das Propostas Highlight */}
+        <section className={styles.themesSection} style={{ paddingTop: 0, paddingBottom: 'var(--space-10)' }}>
+          <div className="container">
+            <Link href="/alem-das-propostas" className="card" style={{ display: 'block', padding: 'var(--space-8)', background: 'var(--bg-secondary)', borderLeft: '4px solid var(--warning)' }}>
+              <span className="badge badge-impact" style={{ background: 'var(--warning-soft)', color: 'var(--warning)', marginBottom: '16px' }}>NOVO</span>
+              <h3 className="h3" style={{ marginBottom: '8px' }}>Além das propostas</h3>
+              <p className="text-body" style={{ color: 'var(--text-secondary)', maxWidth: '800px', marginBottom: '24px' }}>
+                Acusações, investigações e decisões judiciais mudam com o tempo. Você ouviu muita coisa sobre eles, mas o que realmente aconteceu? Acompanhe o estado atual de cada caso.
+              </p>
+              <div className="text-small" style={{ color: 'var(--warning)', fontWeight: 800, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                Ver checagens <ArrowRight size={16} />
+              </div>
+            </Link>
+          </div>
+        </section>
+
         {/* How to Read Section */}
         <section id="como-funciona" className={styles.howToReadSection}>
           <div className="container editorial-content" style={{ textAlign: 'center' }}>
